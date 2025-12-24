@@ -12,7 +12,7 @@ The critical constraint of this project was a strict prohibition on using high-l
 ### My Implementation: The Helin Men Module
 I integrated five distinct tunable filters into the application. My implementation focuses on both visual accuracy and algorithmic optimization:
 
-1.  **Optimized Gaussian Blur:** Unlike standard 2D convolution implementations which can be slow ($O(N^2)$), I implemented **Separable Convolution**. By splitting the process into two 1D passes (horizontal and vertical), I reduced the computational complexity to linear time ($O(N)$). This optimization allows the filter to handle large kernel sizes (e.g., 15x15) in real-time without interface lag.
+1.  **Optimized Gaussian Blur:** Unlike standard 2D convolution implementations which can be slow (O(N^2)), I implemented **Separable Convolution**. By splitting the process into two 1D passes (horizontal and vertical), I reduced the computational complexity to linear time (O(N)). This optimization allows the filter to handle large kernel sizes (e.g., 15x15) in real-time without interface lag.
     
 2.  **Median Filter (Non-Linear):** Designed for noise reduction, this filter uses a sliding window approach to sort pixel values and select the median. It effectively removes "salt and pepper" noise while preserving sharp edges, demonstrating the difference between linear and non-linear filtering.
     
